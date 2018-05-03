@@ -17,10 +17,6 @@ Given("fill in the {string} field with {string}") do |field, text|
   fill_in field, with: text
 end
 
-# Given("a user exists") do
-#   FactoryBot.create(:user, name:'Fake Man', email: 'fakeman@fake.com',password:'fakepassword')
-# end
-
-Given("a user {string} exists") do |user_name|
-  FactoryBot.create(:user, name: user_name, email: 'fakeman@fake.com', password: 'fakepassword')
+Given("a user {string} exists with email {string} and password {string}") do |user_name, user_email, user_password|
+  FactoryBot.create(:user, name: user_name, email: user_email, password: user_password)
 end
