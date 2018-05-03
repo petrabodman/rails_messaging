@@ -23,6 +23,7 @@ group :development do
   gem 'pry-byebug'
   gem 'spring'
   gem 'web-console', '~> 2.0'
+  gem 'launchy'
 end
 
 group :production do
