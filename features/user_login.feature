@@ -8,8 +8,8 @@ Background:
 
 Scenario: User enters correct login credentials
   Given I click a link "Login"
-  And fill in the "Email" field with "nader@nader.com"
-  And fill in the "Password" field with "12345678"
+  And fill in the "Email" field with "fakeman@fake.com"
+  And fill in the "Password" field with "fakepassword"
   And I click a link "Log in"
   Then I should see "Signed in successfully"
 
