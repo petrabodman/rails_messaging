@@ -1,13 +1,12 @@
-Given("I visit the page") do
-  visit root_path
-end
-
-Given("I visit the sign up page") do
-  visit new_user_registration_path
-end
-
-Given("I visit the sign in page") do
-  visit user_session_path
+Given("I visit the {string} page") do |page_link|
+  case page_link
+  when "home"
+      visit root_path
+  when "sign up"
+      visit new_user_registration_path
+  when "sign in"
+      visit user_session_path
+  end
 end
 
 When("I click a link {string}") do |link|

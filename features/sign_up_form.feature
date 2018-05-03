@@ -4,7 +4,7 @@ Feature: User can see details for signing up
   I would like see form with name, email and create password
 
 Scenario: User should see the form for signing up
-  Given I visit the page
+  Given I visit the "home" page
   When I click a link "Sign up"
   Then I should be redirected to the "sign_up" page
   And I should see "Name"

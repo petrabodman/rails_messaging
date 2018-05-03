@@ -4,7 +4,7 @@ Feature: User can fill in a sign up form
   Form should not accept empty fields and password should match
 
 Background:
-  Given I visit the sign up page
+  Given I visit the "sign up" page
 
 Scenario: User should not be able to leave name field blank
   Given fill in the "Name" field with ""

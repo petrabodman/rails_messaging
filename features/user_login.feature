@@ -4,7 +4,7 @@ Feature: User needs to login using his/her credentials
   I should be able to login with my account credentials
 
 Background:
-  Given I visit the sign in page
+  Given I visit the "sign in" page
 
 Scenario: User enters correct login credentials
 Given I click a link "Login"
