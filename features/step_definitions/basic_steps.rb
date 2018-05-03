@@ -20,3 +20,7 @@ end
 Given("a user {string} exists with email {string} and password {string}") do |user_name, user_email, user_password|
   FactoryBot.create(:user, name: user_name, email: user_email, password: user_password)
 end
+
+Given ("select {string} from {string}") do |option, select_box|
+  select(option, from: select_box)
+end
