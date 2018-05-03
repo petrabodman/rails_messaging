@@ -5,6 +5,7 @@ Feature: User needs to login using his/her credentials
 
 Background:
   Given I visit the "sign in" page
+  And a user "Hen" exists
 
 Scenario: User enters correct login credentials
   Given I click a link "Login"
