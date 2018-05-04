@@ -24,3 +24,7 @@ end
 Given ("select {string} from {string}") do |option, select_box|
   select(option, from: select_box)
 end
+
+Given("I have a message") do
+  User.first.messages.create(body: "This is the first message" , subject: "Numero Uno", sender_type: "User", sender_id: 2)
+end
